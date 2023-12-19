@@ -9,7 +9,7 @@ app.use(require('cors')());
 
 // Connect to MongoDB
 // const client = new MongoClient('mongodb://localhost:27017', { useNewUrlParser: true, useUnifiedTopology: true });
-const uri = process.env.MONGO_CONNECTION_STRING || 'mongodb+srv://diwakar:yWwUI5qpupmNow1N@cluster0.de77o86.mongodb.net';
+const uri = process.env.MONGO_CONNECTION_STRING ;
 const client = new MongoClient(uri,
  { useNewUrlParser: true, useUnifiedTopology: true });
 
